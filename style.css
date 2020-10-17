@@ -47,7 +47,7 @@ body {
 }
 
 .menu-link-desktop {
-    display: none;
+  display: none;
 }
 
 .menu-link {
@@ -76,7 +76,7 @@ body {
 }
 
 .menu-icon-right {
-    padding: 12px;
+  padding: 12px;
 }
 
 .menu-profile {
@@ -96,6 +96,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  cursor: pointer;
 }
 
 /* Main */
@@ -122,18 +123,20 @@ body {
   color: rgba(0, 0, 0, 0.87);
   background: transparent;
   border-radius: 25px;
-  border: 1px solid #dadec0;
+  border: 1px solid #e5e7d7;
   outline: 0;
 }
 
-.content-search:focus {
-  border: 1px solid rgb(51, 49, 49);
+.content-search:hover {
+  box-shadow: 1px 2px 4px 1px rgb(206, 206, 206);
+  transition: 100ms;
 }
 
 .content-offer {
   margin-top: 24px;
-  font-size: 13px;
+  font-size: 14px;
   padding: 6px 12px;
+  letter-spacing: .3px;
 }
 
 .content-offer a {
@@ -186,6 +189,32 @@ body {
 /* Media Query */
 
 @media (min-width: 768px) {
+  .menu {
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+  }
+  .menu-icon,
+  .menu-link.active,
+  .menu-link {
+    display: none;
+  }
+
+  .menu-link-desktop {
+    display: flex;
+    color: rgb(46, 44, 44);
+  }
+
+  .menu-link-desktop:hover {
+    color: rgb(104, 95, 95);
+    text-decoration: underline;
+    transition: 300ms;
+  }
+
+  .menu-link-desktop:nth-child(3) {
+    padding-left: 10px;
+  }
+
   .content {
     padding-top: 200px;
   }
@@ -193,35 +222,16 @@ body {
     height: 110px;
   }
   .content-search {
-    padding: 13px 10px 6px 20px;
+    padding: 13px 10px 10px 20px;
     margin-top: 30px;
-    width: 80%
+    width: 80%;
   }
 
-  .menu {
-      display: flex;
-      align-items: right;
-      justify-content: flex-end;
+  .footer-location {
+    font-size: 17px;
   }
-  .menu-icon,
-  .menu-link.active,
-  .menu-link {
-      display: none;
+  
+  .footer-links {
+    font-size: 15px;
   }
-
-  .menu-link-desktop {
-      display: flex;
-      color: rgb(46, 44, 44);
-  }
-
-  .menu-link-desktop:hover {
-    color: rgb(104, 95, 95);
-    text-decoration: underline;
-    transition:300ms;
-  }
-
-  .menu-link-desktop:nth-child(3) {
-    padding-left: 10px;
-  }
-
 }
