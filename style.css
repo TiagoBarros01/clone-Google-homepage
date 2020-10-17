@@ -81,4 +81,50 @@ button {
     left: 0;
 }
 
-/*  */
+/* Main */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 8px 0;
+}
+
+.content-logo {
+    height: 56px;
+}
+
+.content-search {
+    margin-top: 18px;
+    width: 100%;
+    max-width: 633px;
+    padding: 7px 10px 6px 20px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.87);
+    background: transparent;
+    border-radius: 25px;
+    border: 1px solid #dadec0;
+    outline: 0;
+}
+
+.content-search:focus {
+    border: 1px solid rgb(51, 49, 49);
+}
+
+.content-offer {
+    margin-top: 24px;
+    font-size: 13px;
+    padding: 6px 12px;
+}
+
+.content-offer a {
+    color: #8257e6;
+    font-weight: 800;
+}
+
+.content-offer a:hover {
+    transition: 300ms;
+    text-decoration: underline;
+}
+
+/* Footer */
