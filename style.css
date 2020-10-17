@@ -1,3 +1,5 @@
+/* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,4 +8,22 @@
 
     text-decoration: none;
     list-style: none;
+}
+
+*,
+input,
+button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style components */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-section {
+    display: flex;
+    align-items: center;
 }
